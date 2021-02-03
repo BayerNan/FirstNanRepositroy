@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<script>
+
+    function getAge() {
+        // 今年 - 出生年
+        var now = new Date().getFullYear();
+        return now - this.birth;
+    }
+
+    var xiaonan = {
+        name:'南童奎',
+        birth:2000,
+        // 方法
+        age:getAge
+
+    }
+
+    getAge.apply(xiaonan,[]); // this，指向了xiaonan，参数为空
+
+</script>
+
+</body>
+</html>

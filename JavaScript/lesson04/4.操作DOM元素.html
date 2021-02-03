@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/jquery-3.5.1.js"></script>
+</head>
+<body>
+
+<ul id="test-ul">
+    <li class="js">JavaScript</li>
+    <li name="python">Python</li>
+</ul>
+
+<script>
+    // document.getElementById('')
+
+    // 操作DOM 节点文本操作
+    $('#test-ul li[name=python]').text();    // 获得值
+    $('#test-ul li[name=python]').text('12333'); // 设置值
+    $('#test-ul').html();    // 获得值
+    $('#test-ul').html('<strong>123</strong>'); // 设置值
+
+    // css的操作
+    $('#test-ul li[name=python]').css('color','red');
+
+    // 元素的显示和隐藏
+    $('#test-ul li[name=python]').show();
+    $('#test-ul li[name=python]').hide();
+    // 切换隐藏和显示
+    $('#test-ul li[name=python]').toggle();
+    
+    // 娱乐测试
+    $(window).width();
+    $(window).height();
+    $(document).width();
+    $(document).height();
+</script>
+
+</body>
+</html>
